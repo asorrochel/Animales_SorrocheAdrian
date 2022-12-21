@@ -73,4 +73,10 @@ public class listarAnimalesAcuaticos extends AppCompatActivity {
         onBackPressed();
         return true;
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mostrarTodosAnimales(condicionOrdenarActual);
+    }
 }

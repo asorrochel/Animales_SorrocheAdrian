@@ -72,4 +72,10 @@ public class listaSinPatas extends AppCompatActivity {
         onBackPressed();
         return true;
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mostrarTodosAnimales(condicionOrdenarActual);
+    }
 }

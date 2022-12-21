@@ -112,7 +112,14 @@ public class AdapterAnimal extends RecyclerView.Adapter<AdapterAnimal.HolderAnim
                         public void onClick(DialogInterface dialog, int which) {
                             //en este caso borramos al animal que queremos
                             clasebd.eliminarAnimal(id);
-                            //((listarTodosAnimales)contexto).onResume();
+                            ((listarTodosAnimales)contexto).onResume();
+                            ((lista2Patas)contexto).onResume();
+                            ((lista4Patas)contexto).onResume();
+                            ((listaSinPatas)contexto).onResume();
+                            ((listarAnimalesTerrestres)contexto).onResume();
+                            ((listarAnimalesVoladores)contexto).onResume();
+                            ((listarAnimalesAcuaticos)contexto).onResume();
+
                         }
                     });
                     eliminarDialogo.setNegativeButton("No", null);

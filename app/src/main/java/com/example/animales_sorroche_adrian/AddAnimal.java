@@ -8,18 +8,20 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.animales_sorroche_adrian.database.ClaseBD;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.imageview.ShapeableImageView;
 
 public class AddAnimal extends AppCompatActivity {
 
     Toolbar toolbar;
-
     EditText descripcion;
     EditText patas;
     EditText tipo;
     EditText nombre;
+
     FloatingActionButton aceptar;
 
     //declaramos variables para guardar datos
@@ -44,7 +46,7 @@ public class AddAnimal extends AppCompatActivity {
         tipo = findViewById(R.id.add_animal_tipo_editText);
         descripcion = findViewById(R.id.add_animal_desc_EditText);
         aceptar = findViewById(R.id.btn_check);
-
+        uri = Uri.parse("lentejas");
         if(tipo.equals("acuático")) {
             uri = Uri.parse("@drawable/pez");
         } else if (tipo.equals("terrestre")) {
@@ -76,11 +78,14 @@ public class AddAnimal extends AppCompatActivity {
             descripcion.setText(txt_descripcion);
             patas.setText(txt_patas);
             tipo.setText(txt_tipo);
+            //img.setImageURI(uri);
         }
             //Cuando le damos a aceptar guardamos los datos y volvemos a la pantalla donde se muestran todos los registros
             aceptar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+                    Toast.makeText(AddAnimal.this, ""+uri, Toast.LENGTH_SHORT).show();
                     guardarDatos();
                     onBackPressed();
                 }
