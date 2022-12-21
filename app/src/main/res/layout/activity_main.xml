@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DF96EC"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/white"
+            android:layout_height="?attr/actionBarSize"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="279dp">
+
+        <ImageButton
+            android:id="@+id/animalesTodos_img"
+            android:layout_width="match_parent"
+            android:layout_height="269dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/texto_img_todosAnimales"
+            android:scaleType="fitCenter"
+            android:src="@drawable/animales"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/voladores_btn"
+            android:layout_width="80dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:background="#DF96EC"
+            android:contentDescription="@string/texto_img_voladores"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pajaro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/acuaticos_btn"
+            android:layout_width="110dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="272dp"
+            android:layout_marginTop="8dp"
+            android:background="#DF96EC"
+            android:contentDescription="@string/texto_img_marinos"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pez"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/terrestres_btn"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="104dp"
+            android:background="#DF96EC"
+            android:contentDescription="@string/texto_img_tierra"
+            android:scaleType="fitCenter"
+            android:src="@drawable/conejo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="265dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/filtroPatas_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/texto_boton_animales_con"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/boton_add_animal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/texto_boton_aniadir_animal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/plus" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

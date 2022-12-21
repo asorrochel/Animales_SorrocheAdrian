@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">¡Bienvenido al Zoo de DAM!</string>
+    <string name="texto_img_todosAnimales">Imagen de todos los animales</string>
+    <string name="texto_img_voladores">Imagen de animal volador</string>
+    <string name="texto_img_marinos">Imagen de animal marino</string>
+    <string name="texto_img_tierra">Imagen de animal terrestre</string>
+    <string name="texto_boton_animales_con">Animales con ....?</string>
+    <string name="texto_boton_aniadir_animal">Añadir un animal</string>
+
+    <!-- AÑADIR ANIMAL -->
+    <string name="add_nombre_hint">Nombre</string>
+    <string name="add_patas_hint">Número de patas</string>
+    <string name="add_tipo_hint">Tipo de animal</string>
+    <string name="add_descr_hint">Descripción</string>
+    <string name="add_boton_validar">boton aniadir animal</string>
+</resources>

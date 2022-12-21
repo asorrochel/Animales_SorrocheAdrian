@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crearTicket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddAnimal">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/add_animal_toolbar"
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/white"
+            android:layout_height="?attr/actionBarSize"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Nombre -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_animal_nombre_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- TEXFIELD Nombre -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_animal_nombre_TextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="347dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:alpha="0.4"
+            android:textSize="14sp"
+            app:boxBackgroundMode="outline"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:boxStrokeColor="@color/purple_700">
+            <!-- Texto Nombre -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_animal_nombre_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_nombre_hint"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- PATAS -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_animal_patas_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- TEXFIELD Patas -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_animal_patas_TextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="347dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:alpha="0.4"
+            android:textSize="14sp"
+            app:boxBackgroundMode="outline"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:boxStrokeColor="@color/purple_700">
+            <!-- Texto Patas -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_animal_patas_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_patas_hint"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- TIPO -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_animal_tipo_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- TextInputEditText Tipo -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_animal_tipo_TextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="347dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:alpha="0.4"
+            android:textSize="14sp"
+            app:boxBackgroundMode="outline"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:boxStrokeColor="@color/purple_700">
+            <!-- Texto Tipo -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_animal_tipo_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_tipo_hint"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- DESCRIPCION -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_animal_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- TextInputEditText DESCRIPCION -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_desc_TextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:alpha="0.4"
+            android:textSize="14sp"
+            app:boxBackgroundMode="outline"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:boxStrokeColor="@color/purple_700">
+            <!-- Texto Descripcion -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_animal_desc_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="top"
+                android:hint="@string/add_descr_hint"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- BOTON AÑADIR ANIMAL -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_animal_btn_validar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="-1dp">
+        <!--Por último añadimos un botón flotante para aceptar los datos introducidos -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="325dp"
+            android:layout_marginTop="140dp"
+            android:contentDescription="@string/add_boton_validar"
+            android:src="@drawable/check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
